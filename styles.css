@@ -115,13 +115,13 @@ body {
     background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     color: white;
     position: relative;
     overflow: hidden;
-    padding-top: 70px; /* Account for fixed navbar */
+    padding: 70px 0 0 0; /* Account for fixed navbar */
 }
 
 .hero::before {
@@ -142,9 +142,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 4rem 20px;
     position: relative;
     z-index: 2;
+    flex-grow: 1;
 }
 
 .hero-content {
@@ -245,18 +246,28 @@ body {
     50% { transform: translateY(-10px); }
 }
 
-.hero-stats {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
+/* Hero Bottom Container */
+.hero-bottom {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 2rem 3rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    width: auto;
+    max-width: 85%;
+    overflow: hidden;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
 }
 
 .stat {
@@ -272,6 +283,94 @@ body {
 .stat p {
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+/* Hero Logos */
+.hero-logos {
+    flex-shrink: 0;
+    right: 2rem;
+    z-index: 3;
+}
+
+.hero-logos .logos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-logos .logo-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.hero-logos .logo-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hero-logos .logo-universidad {
+    background: linear-gradient(135deg, 
+        rgba(59, 130, 246, 0.9) 0%, 
+        rgba(29, 78, 216, 0.9) 50%, 
+        rgba(30, 64, 175, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-logos .logo-universidad:hover {
+    background: linear-gradient(135deg, 
+        rgba(37, 99, 235, 0.95) 0%, 
+        rgba(29, 78, 216, 0.95) 50%, 
+        rgba(30, 58, 138, 0.95) 100%);
+}
+
+.hero-logos .logo-circular {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.hero-logos .logo-rectangular {
+    height: 75px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.hero-logos .logo-separator {
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.4) 20%, 
+        rgba(255, 255, 255, 0.7) 50%, 
+        rgba(255, 255, 255, 0.4) 80%, 
+        transparent 100%);
+    border-radius: 1px;
+    position: relative;
+}
+
+.hero-logos .logo-separator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
 /* Section Headers */
@@ -305,6 +404,162 @@ body {
     color: #374151;
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Logos Section */
+.logos-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.logos-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(22, 163, 74, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.logos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.02) 0%, rgba(34, 197, 94, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.12),
+        0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.logo-item:hover::before {
+    opacity: 1;
+}
+
+/* Universidad Logo - Cool Blue Gradient */
+.logo-universidad {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-universidad::before {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.1) 100%) !important;
+}
+
+.logo-universidad::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.logo-universidad:hover::after {
+    opacity: 1;
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.logo-universidad:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a8a 100%);
+    transform: translateY(-8px) scale(1.02);
+}
+
+.logo-circular {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.logo-rectangular {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover .logo-circular,
+.logo-item:hover .logo-rectangular {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.logo-separator {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgba(22, 163, 74, 0.3) 20%, 
+        rgba(22, 163, 74, 0.6) 50%, 
+        rgba(22, 163, 74, 0.3) 80%, 
+        transparent 100%);
+    border-radius: 1px;
+    position: relative;
+}
+
+.logo-separator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #16a34a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2);
 }
 
 /* Project Overview */
@@ -659,10 +914,11 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1074px) {
     .hero-container {
         flex-direction: column;
         text-align: center;
+        padding: 3rem 20px;
     }
     
     .hero-content {
@@ -673,6 +929,26 @@ body {
     .hero-title {
         font-size: 3rem;
     }
+
+    .hero-bottom {
+        gap: 3rem;
+        padding: 2rem 2.5rem;
+        max-width: 85%;
+    }
+
+    .hero-stats {
+        gap: 2.5rem;
+    }
+
+    .hero-logos .logo-circular {
+        width: 90px;
+        height: 90px;
+    }
+
+    .hero-logos .logo-rectangular {
+        height: 68px;
+        max-width: 160px;
+    }
     
     .project-content {
         grid-template-columns: 1fr;
@@ -680,7 +956,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 818px) {
     .hamburger {
         display: flex;
     }
@@ -707,8 +983,93 @@ body {
     }
     
     .hero {
-        padding: calc(70px + 2rem) 2rem 2rem 2rem;
+        padding: 70px 2rem 0 2rem;
         min-height: 100vh;
+    }
+
+    .hero-container {
+        padding: 2rem 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-logos {
+        position: static;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-logos .logos-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero-logos .logo-separator {
+        width: 50px;
+        height: 2px;
+        background: linear-gradient(to right, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.4) 20%, 
+            rgba(255, 255, 255, 0.7) 50%, 
+            rgba(255, 255, 255, 0.4) 80%, 
+            transparent 100%);
+    }
+
+    .hero-logos .logo-separator::before {
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-logos .logo-item {
+        padding: 1.2rem;
+    }
+
+    .hero-logos .logo-circular {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-logos .logo-rectangular {
+        height: 60px;
+        max-width: 180px;
+    }
+
+    .logos-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .logo-separator {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(to right, 
+            transparent 0%, 
+            rgba(22, 163, 74, 0.3) 20%, 
+            rgba(22, 163, 74, 0.6) 50%, 
+            rgba(22, 163, 74, 0.3) 80%, 
+            transparent 100%);
+    }
+
+    .logo-separator::before {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .logo-item {
+        padding: 1.5rem;
+    }
+
+    .logo-circular {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-rectangular {
+        height: 45px;
+        max-width: 150px;
     }
     
     .hero-title {
@@ -728,13 +1089,44 @@ body {
         font-size: 0.9rem;
     }
     
+    .hero-bottom {
+        margin: 2rem auto 1rem auto;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        max-width: 95%;
+    }
+
     .hero-stats {
-        position: static;
-        transform: none;
-        margin-top: 3rem;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 1.5rem;
+    }
+
+    .hero-logos .logos-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero-logos .logo-separator {
+        width: 50px;
+        height: 2px;
+        background: linear-gradient(to right, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.4) 20%, 
+            rgba(255, 255, 255, 0.7) 50%, 
+            rgba(255, 255, 255, 0.4) 80%, 
+            transparent 100%);
+    }
+
+    .hero-logos .logo-circular {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero-logos .logo-rectangular {
+        height: 55px;
+        max-width: 180px;
     }
     
     .stat {
