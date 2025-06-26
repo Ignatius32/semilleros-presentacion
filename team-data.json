@@ -1,0 +1,60 @@
+{
+  "participantes": [
+    {
+      "name": "Lic. Verónica Diana Bella",
+      "role": "Directora del Proyecto",
+      "institution": "UNComa - CRUB",
+      "bio": "Directora del proyecto Semilleros de Ciencia Rionegrina, especialista en extensión universitaria y educación científica.",
+      "photo": "",
+      "category": "director"
+    },
+    {
+      "name": "Dr. Roberto Daniel García",
+      "role": "Co-Director del Proyecto",
+      "institution": "UNComa - CRUB",
+      "bio": "Co-director del proyecto, especialista en investigación científica y vinculación universitaria.",
+      "photo": "",
+      "category": "codirector"
+    },
+    {
+      "name": "Lic. Ignacio Basti",
+      "role": "Co-Director del Proyecto",
+      "institution": "UNComa - CRUB",
+      "bio": "Co-director del proyecto, enfocado en desarrollo tecnológico y plataformas educativas.",
+      "photo": "",
+      "category": "codirector"
+    },
+    {
+      "name": "Ejemplo Estudiante 1",
+      "role": "Estudiante de Licenciatura en Ciencias Biológicas",
+      "institution": "UNComa - CRUB",
+      "bio": "Interesado en genética de la conservación y extensión universitaria.",
+      "photo": "",
+      "category": "estudiante"
+    },
+    {
+      "name": "Ejemplo Estudiante 2",
+      "role": "Estudiante de Tecnicatura en Acuicultura",
+      "institution": "UNComa - CRUB",
+      "bio": "Enfocado en sistemas acuáticos sustentables y educación ambiental.",
+      "photo": "",
+      "category": "estudiante"
+    },
+    {
+      "name": "Ejemplo Docente 1",
+      "role": "Profesor Adjunto",
+      "institution": "Cátedra de Zoología - UNComa CRUB",
+      "bio": "Doctor en Ciencias Biológicas, especialista en fauna patagónica.",
+      "photo": "",
+      "category": "docente"
+    },
+    {
+      "name": "Ejemplo Graduado 1",
+      "role": "Licenciado en Ciencias Biológicas",
+      "institution": "Egresado UNComa - CRUB",
+      "bio": "Especialista en educación científica y divulgación.",
+      "photo": "",
+      "category": "graduado"
+    }
+  ]
+}
