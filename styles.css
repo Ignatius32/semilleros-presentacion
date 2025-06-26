@@ -121,6 +121,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    padding-top: 70px; /* Account for fixed navbar */
 }
 
 .hero::before {
@@ -706,7 +707,8 @@ body {
     }
     
     .hero {
-        padding: 2rem 0;
+        padding: calc(70px + 2rem) 2rem 2rem 2rem;
+        min-height: 100vh;
     }
     
     .hero-title {
