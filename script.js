@@ -216,22 +216,22 @@ function loadTeamMembers() {
         
         teamGrid.innerHTML = '';
         
-        // Orden específico de participantes
+        // Orden específico de participantes (nombres exactos como aparecen en los datos)
         const exactOrder = [
-            'Verónica Diana Bella',
-            'Roberto Daniel García',
-            'Ignacio Basti',
-            'Miguel Ernesto Petrabissi',
+            'Lic. Verónica Diana Bella',
+            'Dr. Roberto Daniel García',
+            'Lic. Ignacio Basti',
+            'Prof. Esp. Miguel Ernesto Petrabissi',
             'Marisa Cecilia del Petre',
-            'Rocío Marisol Vega',
-            'Julio Cesar Painefilu',
-            'Martina Ahinoa Bramardi',
-            'Tobías Moccia',
+            'Dra. Rocío Marisol Vega',
+            'Dr. Julio Cesar Painefilu',
+            'Lic. Martina Ahinoa Bramardi',
+            'Lic. Tobías Moccia',
             'Ainara del Carmen Donati Helguera',
             'María Fernanda Chiappero',
             'Vera Palavecino',
             'Felipe Gaspar Giai',
-            'Alejandra Emilce Ruffini',
+            'Lic. Alejandra Emilce Ruffini',
             'Lucila Abril Rivarola Giovannini',
             'Karla Marcela Ojeda Montesinos',
             'Angel Gabriel Sepúlveda',
