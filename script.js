@@ -196,6 +196,14 @@ const teamData = {
             "bio": "Licenciatura en Ciencias Biológicas",
             "photo": "",
             "category": "estudiante"
+        },
+        {
+            "name": "Esteban Alejandro Maldonado Ceballos",
+            "role": "Estudiante",
+            "institution": "CRUB UNComahue",
+            "bio": "Profesorado Universitario en Matemática",
+            "photo": "",
+            "category": "estudiante"
         }
     ]
 };
@@ -227,7 +235,8 @@ function loadTeamMembers() {
             'Lucila Abril Rivarola Giovannini',
             'Karla Marcela Ojeda Montesinos',
             'Angel Gabriel Sepúlveda',
-            'Morena Chiocconi'
+            'Morena Chiocconi',
+            'Esteban Alejandro Maldonado Ceballos'
         ];
         
         const sortedParticipants = teamData.participantes.sort((a, b) => {
@@ -274,15 +283,8 @@ function createMemberCard(member) {
         'organizacion': 'Organización'
     };
     
-    const icons = {
-        'director': 'fas fa-crown',
-        'codirector': 'fas fa-user-tie',
-        'estudiante': 'fas fa-user-graduate',
-        'docente': 'fas fa-chalkboard-teacher',
-        'graduado': 'fas fa-graduation-cap',
-        'nodocente': 'fas fa-users-cog',
-        'organizacion': 'fas fa-building'
-    };
+    // Using a unified person icon for all team members
+    const unifiedIcon = 'fas fa-user';
     
     card.innerHTML = `
         <div class="category-badge category-${member.category}">
@@ -292,7 +294,7 @@ function createMemberCard(member) {
         ${member.photo ? 
             `<img src="${member.photo}" alt="${member.name}" class="member-photo">` :
             `<div class="member-avatar">
-                <i class="${icons[member.category] || 'fas fa-user'}"></i>
+                <i class="${unifiedIcon}"></i>
             </div>`
         }
         
