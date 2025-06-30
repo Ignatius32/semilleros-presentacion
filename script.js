@@ -54,34 +54,34 @@ function animateCounters() {
 const teamData = {
     "participantes": [
         {
-            "name": "Verónica Diana Bella",
-            "role": "Directora del Proyecto - Docente",
+            "name": "Lic. Verónica Diana Bella",
+            "role": "Directora del Proyecto",
             "institution": "CRUB UNComahue",
-            "bio": "Especialista en Genética / Genética de la conservación",
+            "bio": "Encargada de los Laboratorios de Biología CRUB - Docente de Genética y Genética de la conservación",
             "photo": "",
-            "category": "director"
+            "category": "docente/nodocente"
         },
         {
-            "name": "Roberto Daniel García",
-            "role": "Graduado",
+            "name": "Dr. Roberto Daniel García",
+            "role": "Co-director del Proyecto",
             "institution": "INIBIOMA (CONICET-UNCOMAHUE)",
-            "bio": "",
+            "bio": "Invetigador y Divulgador Científico",
             "photo": "",
             "category": "graduado"
         },
         {
-            "name": "Ignacio Basti",
+            "name": "Lic. Ignacio Basti",
             "role": "No Docente",
             "institution": "CRUB UNComahue",
-            "bio": "",
+            "bio": "Diseño y desarrollo de software / Programación de aplicaciones web",
             "photo": "",
             "category": "nodocente"
         },
         {
-            "name": "Miguel Ernesto Petrabissi",
+            "name": "Prof. Esp. Miguel Ernesto Petrabissi",
             "role": "No Docente",
             "institution": "CRUB UNComahue",
-            "bio": "",
+            "bio": "Diseño y desarrollo de software / Programación de aplicaciones web",
             "photo": "",
             "category": "nodocente"
         },
@@ -89,28 +89,28 @@ const teamData = {
             "name": "Marisa Cecilia del Petre",
             "role": "No Docente",
             "institution": "CRUB UNComahue",
-            "bio": "",
+            "bio": "Redes sociales / Comunicación digital",
             "photo": "",
             "category": "nodocente"
         },
         {
-            "name": "Rocío Marisol Vega",
+            "name": "Dra. Rocío Marisol Vega",
             "role": "Docente",
             "institution": "CRUB UNComahue",
-            "bio": "Especialista en Zoología / Biología de Vertebrados Andino Patagónicos",
+            "bio": "Zoología / Biología de Vertebrados Andino Patagónicos",
             "photo": "",
             "category": "docente"
         },
         {
-            "name": "Julio Cesar Painefilu",
+            "name": "Dr. Julio Cesar Painefilu",
             "role": "Docente",
             "institution": "IPATEC (CONICET-UNCOMAHUE)",
-            "bio": "Especialista en Histología animal / Anatomía y Fisiología Humana",
+            "bio": "Histología animal / Anatomía y Fisiología Humana",
             "photo": "",
             "category": "docente"
         },
         {
-            "name": "Martina Ahinoa Bramardi",
+            "name": "Lic. Martina Ahinoa Bramardi",
             "role": "Estudiante",
             "institution": "CRUB UNComahue",
             "bio": "Tecnicatura en Acuicultura",
@@ -118,7 +118,7 @@ const teamData = {
             "category": "estudiante"
         },
         {
-            "name": "Tobías Moccia",
+            "name": "Lic. Tobías Moccia",
             "role": "Estudiante",
             "institution": "CRUB UNComahue",
             "bio": "Tecnicatura en Acuicultura",
@@ -158,7 +158,7 @@ const teamData = {
             "category": "estudiante"
         },
         {
-            "name": "Alejandra Emilce Ruffini",
+            "name": "Lic. Alejandra Emilce Ruffini",
             "role": "Estudiante",
             "institution": "CRUB UNComahue",
             "bio": "Licenciatura en Historia",
