@@ -847,6 +847,11 @@ body {
     color: white;
 }
 
+.category-docente\/nodocente {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: white;
+}
+
 .category-graduado {
     background: linear-gradient(135deg, #16a34a, #15803d);
     color: white;

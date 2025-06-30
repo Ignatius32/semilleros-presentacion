@@ -280,6 +280,7 @@ function createMemberCard(member) {
         'docente': 'Docente',
         'graduado': 'Graduado/a',
         'nodocente': 'No Docente',
+        'docente/nodocente': 'Docente/No Docente',
         'organizacion': 'Organización'
     };
     
