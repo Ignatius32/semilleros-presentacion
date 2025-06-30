@@ -86,7 +86,7 @@ const teamData = {
             "category": "nodocente"
         },
         {
-            "name": "Marisa Cecilia del Petre",
+            "name": "Tec. Sup. Marisa Cecilia del Prete",
             "role": "No Docente",
             "institution": "CRUB UNComahue",
             "bio": "Redes sociales / Comunicación digital",
@@ -134,7 +134,7 @@ const teamData = {
             "category": "estudiante"
         },
         {
-            "name": "María Fernanda Chiappero",
+            "name": "Lic. María Fernanda Chiappero",
             "role": "Estudiante",
             "institution": "CRUB UNComahue",
             "bio": "Profesorado en Ciencias Biológicas",
